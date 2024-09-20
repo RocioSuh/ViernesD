@@ -11,6 +11,5 @@ let edad = "25"
 console.log(nombre)
 console.log("Tu nombre es: " + nombre + " y tu edad es: " + edad )
 console.log(`Tu nombre es: ${nombre} y tu edad es ${edad}`)
-prompt(`ingrese su nombre: `)
 const NU = prompt(`ingrese su nombre: `)
 console.log(NU)
