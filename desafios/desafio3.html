@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombreProducto = "Café"
+        let precioUnitario = 3500
+        let oferta = 5
+        const cantidadDeseada = prompt(`Cuantas unidades de ${nombreProducto} (P/U: $${precioUnitario}) deseas comprar?: \nSi compra ${oferta} unidades o mas se le aplicara un descuento del 10% `)
+        let Subtotal = (precioUnitario*cantidadDeseada)
+        let Descuento = (10*Subtotal/100)
+        let costoTotal = (Subtotal-Descuento)
+        if(cantidadDeseada<5){
+            alert(`Ticket de compra: \n Producto: ${nombreProducto} \n Precio Unitario: $${precioUnitario} \n Cantidad: ${cantidadDeseada} \n Subtotal: $${Subtotal} \n Descuento (10%): - \n Total a Pagar: $${Subtotal}`)
+        }
+        else{
+            alert(`Ticket de compra: \n Producto: ${nombreProducto} \n Precio Unitario: $${precioUnitario} \n Cantidad: ${cantidadDeseada} \n Subtotal: $${Subtotal} \n Descuento (10%): -$${Descuento} \n Total a Pagar: $${costoTotal}`)
+        }
+    </script>
+</body>
+</html> 
