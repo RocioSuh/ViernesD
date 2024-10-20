@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombreProducto = ["Album limitado", "Album version 1", "Album version 2"]
+        let precioProducto = [ 80000, 70000, 70000]
+        let stockProducto = [ 3, 2, 4] 
+        console.log("Stock inicial de productos:")
+
+for (let i = 0; i < nombreProducto.length; i++) { 
+    console.log("Producto: " + nombreProducto[i] + " | Precio: $" + precioProducto [i] + " | Stock: " + stockProducto [i])
+}
+// suponiendo que nos compran todos los productos en tres ventas
+for (let i = 0; i < 3; i++) {  
+    console.log(`Se vendió el producto '${nombreProducto[i]}'`);
+
+    nombreProducto.pop()
+    precioProducto.pop()
+    stockProducto.pop()
+
+    console.log("Stock actualizado después de la venta:");
+    for (let x = 0; x < nombreProducto.length; x++) {
+        console.log("Producto: " + nombreProducto[x] + " | Precio: $" + precioProducto [x] + " | Stock: " + stockProducto [x])
+    }}
+    console.log("Se han vendido todos los productos, no hay stock disponible")
+    </script>
+</body>
+</html>
